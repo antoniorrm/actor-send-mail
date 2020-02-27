@@ -40,7 +40,7 @@ Apify.main(async () => {
 
     // Sends mail
     const mail = _.pick(input, MAIL_ATTRIBUTES);
-    mail.from = 'Apify Mailer <postmaster@apify-mailer.com>';
+    mail.from = 'Teste update <antoniorrm@sysautomacao.com.br>';
     if (input.replyTo) mail['h:Reply-To'] = input.replyTo;
     const sender = mailgun({
         apiKey: process.env.MAILGUN_API_KEY,
